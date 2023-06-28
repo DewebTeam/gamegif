@@ -1,0 +1,473 @@
+/* Estilo global */
+body {
+  /*background-color: #E7E7E7;*/
+  background-image: url(fondo.png);
+  color: #fff;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+  display: flex;
+}
+
+/* Estilo del botón del menú */
+.menu-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 10px;
+  margin-right: 10px;
+}
+
+
+/* Estilo del contenido principal */
+.main-content {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+/* Estilo del carrito */
+.cart {
+  /*background-color: #DCDCDC;*/
+   background-color: rgba(280, 280, 3320, 0.4);
+   box-shadow: 0 2px 4px rgba(0, 0, 0.1, 0.1);
+  width: 200px;
+  height:180vh;
+  padding: 40px;
+  color : #0d0d0d;
+    align-items: center;
+  text-align: center;
+}
+
+#cart h2 {
+  color: #0042FF;
+}
+
+#cart-items {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+
+}
+
+#cart-items li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+
+}
+
+#cart-items img {
+  max-width: 80px;
+  max-height: 80px;
+  margin-right: 10px;
+
+}
+
+
+
+#cart-items .quantity-container {
+  margin-top: 5px;
+  color: #0d0d0d;
+  padding: 5px 10px 2px;
+  flex-direction: column;
+    align-items: center;
+  text-align: center;
+
+}
+
+#cart-items .quantity-container button {
+	  align-items: center;
+  text-align: center;
+  background-color: #0042FF;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 2px;
+  cursor: pointer;
+
+}
+
+#cart-items .quantity-container button:hover {
+  background-color: #002D7E;
+}
+
+#clear-cart-btn {
+  background-color: #FF0000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+#clear-cart-btn:hover {
+  background-color: #990000;
+}
+
+
+
+/* Productos ccs */
+.main-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1000px; /* Ajusta el ancho máximo según tus necesidades */
+  margin: 0 auto; /* Centra el contenedor */
+}
+
+.product {
+  flex-basis: calc(20% - 15px); /* Calcula el ancho de cada producto (4 productos por fila) */
+ /* background-color: #DCDCDC;*/
+ background-color: rgba(220, 220, 220, 0.4);
+  box-shadow: 0 2px 4px rgba(0, 0, 0.1, 0.1);
+  color: #0d0d0d;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.product img {
+  width: 115%;
+  height: auto;
+  max-width: 200px;
+  max-height: 200px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.product h3 {
+  margin-top: 0;
+}
+
+.product p {
+  margin-bottom: 1px;
+
+}
+
+.buy-button {
+  background-color: #0042FF;
+  box-shadow: 0 2px 4px rgba(0, 0, 0.1, 0.1);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 50px;
+}
+
+
+
+/* header y footer*/
+.header {
+  /*background-color: #0042FF;*/
+ background-color: rgba(280, 280, 3320, 0.4);
+ box-shadow: 0 2px 4px rgba(0, 0, 0.1, 0.1);
+  color: #fff;
+  padding: 20px;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  width: 170px;
+  height: auto; /* Ajusta el ancho del logo según tus necesidades */
+}
+
+.header-buttons {
+  display: flex;
+  gap: 10px; /* Ajusta el espacio entre los botones según tus necesidades */
+}
+
+.header-button {
+  background-color: #2A61FF;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+.header-button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.footer {
+    position: relative;
+  background-color: #0d0d0d;
+  padding: 20px;
+  text-align: center;
+}
+
+footer img {
+  max-width: 100px; 
+  height: auto;
+  display: block; 
+  margin: 0 auto; /* Para centrar horizontalmente el logo */
+}
+
+.mensaje {
+  display: none;
+  background-color: #e9f7fd;
+  color: #007bff;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.formulario-compra {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-finalizar-compra {
+  background-color: #00D333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+
+}
+
+.btn-finalizar-compra:hover {
+  background-color: #007C1E;
+}
+
+.promo-section {
+  width: 100%;
+  height: 400px;
+  background-color: #f2f2f2;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.swiper-slide img {
+  max-width: 100%;
+  max-height: 100%;
+}
+main {
+  padding: 20px;
+  color: #0d0d0d;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background-color: #55c73c;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+  z-index: 9999;
+}
+
+.whatsapp-button img {
+  width: 60px;
+  height: 60px;
+   position: fixed;
+  bottom: 20px;
+  right: 20px;
+    border-radius: 50%;
+
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+.whatsapp-button img {
+  animation: wave-animation 2s infinite;
+}
+
+/* Estilos para el icono de chat */
+/* Estilos para el icono de chat */
+#chatIcon {
+  position: fixed;
+  bottom: 100px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+    border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 999;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+#chatIcon img {
+  width: 30px;
+  height: 30px;
+}
+
+#chatIcon:hover {
+  transform: scale(1.1);
+}
+
+/* Estilos para el modal de chat */
+#chatModal {
+  display: none;
+  position: fixed;
+  bottom: 140px;
+  right: 20px;
+  width: 300px;
+  height: 400px;
+  z-index: 999;
+  overflow: hidden;
+  border: 2px solid #0085ff;
+  border-radius: 30px;
+     background-color: #0d0d0d;
+   box-shadow: 0 2px 4px rgba(0, 0, 0.1, 0.1);
+}
+
+#chatModal h2 {
+  padding: 10px;
+  background-color: #0794ff;
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+  border-radius: 30px;
+}
+
+#chatModal p {
+  color: #0d0d0d;
+  margin: 10px;
+  border-radius: 30px;
+}
+
+#chatModal textarea {
+  width: 90%;
+  height: 120px;
+  margin: 10px;
+  padding: 5px;
+  border: 1px solid #0085ff;
+  border-radius: 30px;
+}
+
+#chatModal button {
+  margin: 10px;
+  padding: 6px 12px;
+  background-color: #ff7a00;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 30px;
+}
+
+#chatModal button:hover {
+  background-color: #0085ff;
+}
+
+#chatModal .close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  color: #0085ff;
+  cursor: pointer;
+}
+
+#chatModal .close:hover {
+  color: #0d0d0d;
+}
+
+
+.modal-content {
+  margin: 20% auto;
+  padding: 20px;
+  width: 80%;
+  max-width: 500px;
+  border-radius: 5px;
+}
+
+.close {
+  color: #0d0d0d;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Estilos para las preguntas frecuentes */
+.faq-question {
+  display: block;
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  padding: 5px 0;
+  cursor: pointer;
+  color: black;
+}
+
+.faq-answer {
+  margin-bottom: 10px;
+}
+
+/* Estilos para los mensajes en el chat */
+#chatMessages {
+  margin-top: 10px;
+}
+
+
+
+

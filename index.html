@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>GameGif - 2023</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<header class="header">
+  <div class="header-content">
+    <div class="logo">
+      <img src="logo.png" alt="Logo de la página">
+    </div>
+    <div class="header-buttons">
+      <button class="header-button">Gift Cart</button>
+    </div>
+  </div>
+</header>
+  <div class="container">
+<div class="main-content" id="product-container">
+  <div class="product">
+    <img src="xbox.png" >
+    <h3>Gift Card Xbox</h3>
+    <p>Precio: $5.000</p>
+ <button class="buy-button" onclick="agregarAlCarrito('Xbox', 5000, 'xbox.png')">Agregar al carrito</button>
+  </div>
+  <div class="product">
+    <img src="nintendo.png">
+    <h3>Nintendo $5 </h3>
+    <p>Precio: $25.000</p>
+ <button class="buy-button" onclick="agregarAlCarrito('Nintendo', 25000, 'nintendo.png')">Agregar al carrito</button>
+  </div>
+  <div class="product">
+    <img src="ps.png" >
+    <h3>PlayStation</h3>
+    <p>Precio: $12.000</p>
+    <button class="buy-button" onclick="agregarAlCarrito('PlayStation', 12000, 'ps.png')">Agregar al carrito</button>
+
+  </div>
+
+   <div class="product">
+    <img src="valorant.png">
+    <h3>Valorant Gift Card</h3>
+    <p>Precio: $41.170</p>
+     <button class="buy-button" onclick="agregarAlCarrito('Valorant', 41170, 'valorant.png')">Agregar al carrito</button>
+  </div>
+  <div class="product">
+    <img src="fornite.png">
+    <h3>Fornite $1000</h3>
+    <p>Precio: $32.600</p>
+     <button class="buy-button" onclick="agregarAlCarrito('Fornite', 32600, 'fornite.png')">Agregar al carrito</button>
+
+  </div>
+
+    <div class="product">
+    <img src="netflix.jpg">
+    <h3>Netflix Gift Card</h3>
+    <p>Precio: $20.000</p>
+     <button class="buy-button" onclick="agregarAlCarrito('Netflix', 20000, 'netflix.jpg')">Agregar al carrito</button>
+    </div>
+
+        <div class="product">
+    <img src="netflix.jpg">
+    <h3>Netflix Gift Card</h3>
+    <p>Precio: $30.000</p>
+     <button class="buy-button" onclick="agregarAlCarrito('Netflix', 30000, 'netflix.jpg')">Agregar al carrito</button>
+    </div>
+
+        <div class="product">
+    <img src="netflix.jpg">
+    <h3>Netflix Gift Card</h3>
+    <p>Precio: $40.000</p>
+     <button class="buy-button" onclick="agregarAlCarrito('Netflix', 40000, 'netflix.jpg')">Agregar al carrito</button>
+    </div>
+
+        <div class="product">
+    <img src="appstore.jpg">
+    <h3>Appstore Gift Card</h3>
+    <p>Precio: $50.000</p>
+     <button class="buy-button" onclick="agregarAlCarrito('Appstore', 50000, 'appstore.jpg')">Agregar al carrito</button>
+    </div>
+
+        <div class="product">
+    <img src="playstore.jpg">
+    <h3>Playstore Gift Card</h3>
+    <p>Precio: $35.000</p>
+     <button class="buy-button" onclick="agregarAlCarrito('Playstore', 35000, 'playstore.jpg')">Agregar al carrito</button>
+    </div>
+
+</div>
+
+
+
+
+  <div class="cart">
+    <h2>Carrito</h2>
+      <ul id="cart-items"></ul>
+        <strong><p id="cart-total"></p></strong>
+        <button id="clear-cart-btn" onclick="vaciarCarrito()">Vaciar Carrito</button>
+
+  <button class="btn-finalizar-compra" onclick="enviarMensajeWhatsApp()" >Finalizar compra</button>
+</form>
+
+    </div>
+  </div>
+<a href="https://api.whatsapp.com/send?phone=573245621294&text=Hola%2C%20necesito%20ayuda%20con%20mi%20compra" target="_blank" class="whatsapp-button">
+  <img src="soporte.png" alt="WhatsApp">
+</a>
+<!-- Agrega el elemento de imagen para el icono del chat -->
+<img src="chat.png" alt="Chat Icon" id="chatIcon" />
+
+<!-- Resto del código HTML del modal del chat -->
+<div id="chatModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Preguntas frecuentes</h2>
+    <div id="chatMessages">
+      <!-- Aquí se mostrarán las respuestas en el chat -->
+    </div>
+    <div id="faqList">
+      <button class="faq-question" onclick="mostrarRespuesta(' Para realizar un pedido, simplemente agrega los productos que te interesen al  carrito y luego presiona en 🛍️ Finalizar Compra. De esta manera, podremos coordinar el pago y hacer realidad tu pedido. Estamos aquí para ayudarte😊')">¿Cómo realizar un pedido?</button>
+      <button class="faq-question" onclick="mostrarRespuesta('¿Cuáles son las formas de pago?')">¿Cuáles son las formas de pago?</button>
+      <!-- Agrega más preguntas frecuentes si es necesario -->
+    </div>
+  </div>
+</div>
+
+    <footer class="footer">
+    <p >Todos los derechos reservados. deWeb Team &copy; 2023</p>
+     <img src="logo2.png" alt="Logo de la empresa">
+  </footer>
+
+
+  <script src="app.js"></script>
+</body>
+</html>
